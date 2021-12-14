@@ -50,6 +50,8 @@ section .loader span::before {
     0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
   animation: animate 2s linear infinite;
   animation-delay: calc(0.1s * var(--i));
+  /* animation delay가 커질수록 애니메이션 정의 100% 모양에 가까워짐 */
+  /* 그만큼 animation이 늦게 실행되니깐 그 점을 항상 유의 */
 }
 
 @keyframes animate {
